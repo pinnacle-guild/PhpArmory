@@ -111,7 +111,7 @@ class ResultSet
                 $this->keyValuePairExists($key, $value, $v);
             } else {
                 if ($k == $key and $v == $value) {
-                    $propertyExists = true;
+                    $keyValuePairExists = true;
                     break;
                 }
             }
