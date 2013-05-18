@@ -154,7 +154,8 @@ class PhpArmory
      * @return ResultSet
      * @throws InvalidQueryException
      */
-    private function query($query, $region = null) {
+    private function query($query, $region = null)
+    {
         // Set region fallback
         $region = (empty($region)) ? $this->region : $region;
          
@@ -175,7 +176,8 @@ class PhpArmory
      * @return void
      * @throws PhpArmoryException
      */
-    public function setRealm($realm) {
+    public function setRealm($realm)
+    {
         // Is locale set
         if (empty($this->locale)) {
             // Validate realm name (with no locale specified)
